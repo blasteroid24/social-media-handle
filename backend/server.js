@@ -15,5 +15,5 @@ app.use('/api/users', userRoutes);
 
 
 
-mongoose.connect(process.env.mongo).then(() => { app.listen(process.env.PORT, () => console.log('Server running on port 3000')); })
+mongoose.connect(process.env.MONGO).then(() => { app.listen(process.env.PORT, () => console.log('Server running on port 3000')); })
 
