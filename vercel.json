@@ -9,11 +9,19 @@
   "routes": [
     {
       "src": "/api/users/(.*)",
-      "dest": "backend/server.js"
+      "dest": "/backend/server.js"
     },
     {
       "src": "/uploads/(.*)",
-      "dest": "backend/uploads/$1"
+      "dest": "/backend/uploads/$1"
     }
-  ]
+  ],
+  "env": {
+    "MONGO": "@mongo-uri" 
+  },
+  "functions": {
+    "api/*": {
+      "maxDuration": 10 
+    }
+  }
 }
