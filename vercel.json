@@ -15,13 +15,5 @@
       "src": "/uploads/(.*)",
       "dest": "/backend/uploads/$1"
     }
-  ],
-  "env": {
-    "MONGO": "@mongo-uri" 
-  },
-  "functions": {
-    "api/*": {
-      "maxDuration": 10 
-    }
-  }
+  ]
 }
