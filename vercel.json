@@ -10,10 +10,6 @@
     {
       "src": "/api/users/(.*)",
       "dest": "/backend/server.js"
-    },
-    {
-      "src": "/uploads/(.*)",
-      "dest": "/backend/uploads/$1"
-    }
+    } 
   ]
 }
